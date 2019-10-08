@@ -25,6 +25,6 @@ node {
         }
 	}
 	stage('Deploy') {
-		sh "sudo helm upgrade todo todo/. --recreate-pods --set image.tag=$tag"
+		sh " helm upgrade todo todo/. --recreate-pods --set image.tag=$tag"
 	}
 }
